@@ -1,5 +1,20 @@
 # Changelog
 
+## \[0.1.4]
+
+- Allow preventing window close when the user requests it.
+  - [8157a68a](https://www.github.com/tauri-apps/tauri/commit/8157a68af1d94de1b90a14aa44139bb123b3436b) feat(core): allow listening to event loop events & prevent window close ([#2131](https://www.github.com/tauri-apps/tauri/pull/2131)) on 2021-07-06
+- Fixes SVG loading on custom protocol.
+  - [e663bdd5](https://www.github.com/tauri-apps/tauri/commit/e663bdd5938830ab4eba961e69c3985191b499dd) fix(core): svg mime type ([#2129](https://www.github.com/tauri-apps/tauri/pull/2129)) on 2021-06-30
+- Applies a workaround to a Windows webview2 positioning issue after a window move event.
+  - [06abe655](https://www.github.com/tauri-apps/tauri/commit/06abe65569d4a4a19b535829c26aae34590600ab) fix(wry): resize webview on window move, closes [#1911](https://www.github.com/tauri-apps/tauri/pull/1911) ([#2135](https://www.github.com/tauri-apps/tauri/pull/2135)) on 2021-07-02
+- Expose `gtk_window` getter.
+  - [e0a8e09c](https://www.github.com/tauri-apps/tauri/commit/e0a8e09cab6799eeb9ec524b5f7780d1e5a84299) feat(core): expose `gtk_window`, closes [#2083](https://www.github.com/tauri-apps/tauri/pull/2083) ([#2141](https://www.github.com/tauri-apps/tauri/pull/2141)) on 2021-07-02
+- Remove a few locks requirement in tauri-runtime-wry
+  - [6569c2bf](https://www.github.com/tauri-apps/tauri/commit/6569c2bf5caf24b009cad1e2cffba25418d6bb68) refactor(wry): remove a few locks requirements ([#2137](https://www.github.com/tauri-apps/tauri/pull/2137)) on 2021-07-02
+- Fix macOS high CPU usage.
+  - [a280ee90](https://www.github.com/tauri-apps/tauri/commit/a280ee90af0749ce18d6d0b00939b06473717bc9) Fix high cpu usage on mac, fix [#2074](https://www.github.com/tauri-apps/tauri/pull/2074) ([#2125](https://www.github.com/tauri-apps/tauri/pull/2125)) on 2021-06-30
+
 ## \[0.1.3]
 
 - `Window` is now `Send + Sync` on Windows.

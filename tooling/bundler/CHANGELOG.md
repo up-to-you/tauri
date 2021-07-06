@@ -1,5 +1,10 @@
 # Changelog
 
+## \[1.0.0-beta.3]
+
+- Run powershell commands with `-NoProfile` flag
+  - [3e6f3416](https://www.github.com/tauri-apps/tauri/commit/3e6f34160deab4f774d90aba28122e5b6b6f9db2) fix(cli.rs): run powershell kill command without profile ([#2130](https://www.github.com/tauri-apps/tauri/pull/2130)) on 2021-06-30
+
 ## \[1.0.0-beta.2]
 
 - Properly detect target platform's architecture.
